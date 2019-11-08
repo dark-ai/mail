@@ -9,7 +9,6 @@ from email.mime.multipart import MIMEMultipart
 
 class Writer(object):
 
-
     def __init__(self, my_address, password):
         self.my_address = my_address
         self.password = password
