@@ -32,7 +32,7 @@ class Writer(object):
             print(f'{suffix} is not supported')
             return False
         try:
-            server = smtplib.SMTP()
+            server = smtplib.SMTP_SSL()
             server.connect(host)
             server.login(msg['From'], self.password)
             server.sendmail(self.my_address, [msg['To']], msg.as_string())
